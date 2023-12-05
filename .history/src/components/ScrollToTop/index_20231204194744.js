@@ -40,7 +40,7 @@ export const Up = styled.div`
   }
 `;
 
-export function ScrollToTop() {
+const ScrollToTop = () => {
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
@@ -70,4 +70,6 @@ export function ScrollToTop() {
       <img ref={ref} src={SvgIcon} alt="to top" />
     </Up>
   );
-}
+};
+
+export default ScrollToTop;

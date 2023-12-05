@@ -1,14 +1,13 @@
 import Logo from "../../assets/logo.svg";
-import { Headers, LogoDiv, Nav } from "./styles";
 
 export function Header() {
   return (
-    <Headers>
-      <LogoDiv>
+    <header>
+      <div>
         <img src={Logo} alt="CodeBucks" />
         <h3>CodeBucks</h3>
-      </LogoDiv>
-      <Nav>
+      </div>
+      <nav>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
@@ -16,7 +15,7 @@ export function Header() {
         <a href="#contact">
           <button>Contact Us</button>
         </a>
-      </Nav>
-    </Headers>
+      </nav>
+    </header>
   );
 }

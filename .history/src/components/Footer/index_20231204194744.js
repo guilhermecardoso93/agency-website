@@ -43,17 +43,17 @@ const RightText = styled.div`
 const LeftText = styled.div`
   text-align: left;
 `;
-export function Footer() {
+const Footer = () => {
   return (
     <FOOTER>
       <LeftText>
-        © 2023 Built and Design by{" "}
+        © 2021 Built and Design by{" "}
         <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
           @CodeBucks
         </a>
       </LeftText>
       <RightText>
-        remade it by Guilherme Cardoso 😉
+        Reach out to me via 😉
         <a href="https://twitter.com/code_bucks">
           <img src={Twitter} alt="Twitter" />
         </a>
@@ -68,5 +68,8 @@ export function Footer() {
       </RightText>
     </FOOTER>
   );
-}
+};
 
+export default Footer;
+
+//© 2021 by CodeBucks. Design by @CodeBucks.
