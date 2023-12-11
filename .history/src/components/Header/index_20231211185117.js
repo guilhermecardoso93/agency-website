@@ -27,10 +27,10 @@ export function Header() {
         <span />
       </HamburgerBtn>
       <MobileMenu clicked={click}>
-        <a href="#home" onClick={() => handleClick()}>Home</a>
-        <a href="#about" onClick={() => handleClick()}>About Us</a>
-        <a href="#services" onClick={() => handleClick()}>Services</a>
-        <a href="#contact" onClick={() => handleClick()}>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">
           <Button>Contact Us</Button>
         </a>
       </MobileMenu>

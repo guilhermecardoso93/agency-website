@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Logo from "../../assets/logo.svg";
-import { Headers, LogoDiv, Nav, Button, HamburgerBtn, MobileMenu } from "./styles";
+import { Headers, LogoDiv, Nav, Button, HamburgerBtn } from "./styles";
 
 export function Header() {
   const [click, setClick] = useState(false);
@@ -26,14 +26,6 @@ export function Header() {
       <HamburgerBtn onClick={() => handleClick()} clicked={click}>
         <span />
       </HamburgerBtn>
-      <MobileMenu clicked={click}>
-        <a href="#home" onClick={() => handleClick()}>Home</a>
-        <a href="#about" onClick={() => handleClick()}>About Us</a>
-        <a href="#services" onClick={() => handleClick()}>Services</a>
-        <a href="#contact" onClick={() => handleClick()}>
-          <Button>Contact Us</Button>
-        </a>
-      </MobileMenu>
     </Headers>
   );
 }

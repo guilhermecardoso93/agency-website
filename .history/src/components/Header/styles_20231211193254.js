@@ -126,7 +126,7 @@ export const HamburgerBtn = styled.button`
 `;
 
 export const MobileMenu = styled.div`
-  display: none;
+    display: none;
   @media only Screen and (max-width: 48em) {
     display: flex;
   }
